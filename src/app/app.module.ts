@@ -6,6 +6,7 @@ import { HelloSectionComponent } from './hello-section/hello-section.component';
 import { SkillsSectionComponent } from './skills-section/skills-section.component';
 import { ProjectsSectionComponent } from './projects-section/projects-section.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
+import { GithubCardComponent } from './github-card/github-card.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ContactSectionComponent } from './contact-section/contact-section.compo
     HelloSectionComponent,
     SkillsSectionComponent,
     ProjectsSectionComponent,
-    ContactSectionComponent
+    ContactSectionComponent,
+    GithubCardComponent
   ],
   imports: [
     BrowserModule

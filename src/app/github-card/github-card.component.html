@@ -1,0 +1,31 @@
+<div class="GitHubCard">
+    <div class="TabBar">
+        <div class="Dot"></div>
+        <div class="Dot"></div>
+        <div class="Dot"></div>
+    </div>
+    <div class="GithubIcon">
+        <img  [src]="'assets/svg/github.svg'" />
+    </div>
+    <div class="GithubText">
+        <p class="GithubTextProject">
+            project:
+            <strong class="GithubTitle">{{project}}</strong>
+        </p>
+        <p class="GitHubDescription">
+            description: {{description}}
+        </p>
+        <p class="GithubTextDemo">
+            demo:
+            <strong class="GithubTextPading">
+                {{"<"}}<a href={{website}} target="_blank" class="GithubTextLinks">see here</a>{{">"}}
+            </strong>
+        </p>
+        <p class="GithubTextGithub">
+            github:
+            <span class="GithubTextPading">
+                {{"<"}}<a href={{link}} target="_blank" class="GithubTextLinks">source code</a>{{">"}}
+            </span>
+        </p>
+    </div>
+</div>
