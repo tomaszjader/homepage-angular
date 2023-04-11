@@ -6,10 +6,10 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./github-card.component.scss']
 })
 export class GithubCardComponent {
-  @Input() description: string | undefined ='';
-  @Input() project: string | undefined='';
-  @Input() link: string | undefined='';
-  @Input() website: string | undefined=''; 
+  @Input() description?: string ='';
+  @Input() project?: string ='';
+  @Input() link?: string ='';
+  @Input() website?: string =''; 
 
 
 }

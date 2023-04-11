@@ -10,6 +10,9 @@ import { Observable } from 'rxjs/internal/Observable';
 export class ProjectsSectionComponent {
     data: Project[] =[];
     constructor(private githubProject:GithubProjectsService){
+      
+    }
+    ngOnInit(){
       this.githubProject.getData().subscribe(
         (data:Project[]) => {console.log(data);
         this.data = data;

@@ -2,7 +2,7 @@
     <h2 class="ProjectHeader">Recent projects</h2>
     <p class="ProjectParagraf">I started my frontend developer path in 2020. Since then, I’ve built multiple projects.
         Here’s the list of some of the things I’ve done so far.</p>
-    <div class="ProjectsGap">
+    <div class="ProjectsGap" *ngIf="data && data.length > 0">
         <div class="ProjectsGitHubCards">
             <app-github-card 
             [description]="data[0].description"
