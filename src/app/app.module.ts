@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from'@angular/common/http'
 import { AppComponent } from './app.component';
 import { HelloSectionComponent } from './hello-section/hello-section.component';
 import { SkillsSectionComponent } from './skills-section/skills-section.component';
@@ -18,7 +18,8 @@ import { GithubCardComponent } from './github-card/github-card.component';
     GithubCardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

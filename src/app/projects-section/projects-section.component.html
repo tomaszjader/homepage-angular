@@ -1,1 +1,36 @@
-<p>projects-section works!</p>
+<div id="projects" class="Projects">
+    <h2 class="ProjectHeader">Recent projects</h2>
+    <p class="ProjectParagraf">I started my frontend developer path in 2020. Since then, I’ve built multiple projects.
+        Here’s the list of some of the things I’ve done so far.</p>
+    <div class="ProjectsGap">
+        <div class="ProjectsGitHubCards">
+            <app-github-card 
+            [description]="data[0].description"
+            [project]="data[0].repo"
+            [link]="data[0].link"
+            [website]="data[0].website"
+            ></app-github-card>
+            <app-github-card 
+            [description]="data[1].description"
+            [project]="data[1].repo"
+            [link]="data[1].link"
+            [website]="data[1].website"
+            ></app-github-card>
+        </div>
+        <div class="ProjectsGitHubCards">
+            <app-github-card 
+            [description]="data[2].description"
+            [project]="data[2].repo"
+            [link]="data[2].link"
+            [website]="data[2].website"
+            ></app-github-card>
+            <app-github-card 
+            [description]="data[3].description"
+            [project]="data[3].repo"
+            [link]="data[3].link"
+            [website]="data[3].website"
+            ></app-github-card>
+        </div>
+    </div>
+
+</div>

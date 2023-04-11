@@ -1,0 +1,41 @@
+.Projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 176px;
+    font-family: 'Nunito';
+}
+
+.ProjectsGitHubCards {
+    display: flex;
+    gap: 24px;
+
+}
+
+.ProjectsGap {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.ProjectHeader {
+    color: #234361;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.ProjectParagraf {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 40px;
+    color: #425A70;
+
+    margin-bottom: 128px;
+}
+@media only screen and (max-width: 1121px) {
+    .ProjectsGitHubCards {
+        display: flex;
+    gap: 24px;
+    flex-direction: column;
+    }
+}
