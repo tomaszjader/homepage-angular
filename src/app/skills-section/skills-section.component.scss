@@ -1,0 +1,75 @@
+.Skills {
+    background: #1070CA;
+    font-family: 'Nunito';
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-style: normal;
+    min-height: 335px;
+   
+}
+
+.SkillsConteiner {
+    display: flex;
+    justify-content: center;
+    gap: 184px;
+    margin-bottom: 176px;
+}
+
+.SkillsHeader {
+    margin-top: 80px;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.SkillsEmoji {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+.SkillsHeaderH3 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.SkillsList {
+    font-weight: 600;
+    font-size: 16px;
+}
+.SkillsConteinerConcret {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.SkillsListWorking {
+    list-style-image: url('../../assets/svg/small-tick-green.svg');
+    font-weight: normal;
+}
+.SkillsListKnow {
+    list-style-image: url('../../assets/svg/small-tick-white.svg');
+    font-weight: normal;
+}
+.SkillsListWant {
+    font-weight: normal;
+    list-style-image: url('../../assets/svg/list-dot.svg');
+    
+}
+li::marker {
+    
+    font-size: 0.7em;
+}
+
+@media only screen and (max-width: 1121px) {
+    .SkillsConteiner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 184px;
+        margin-bottom: 176px;
+    }
+}
