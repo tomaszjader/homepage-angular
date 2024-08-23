@@ -1,21 +1,27 @@
 import { Component } from '@angular/core';
 import { GithubProjectsService } from '../service/github-projects.service';
-import { Project } from '../project';
+import { Project } from '../interface/project';
 import { Observable } from 'rxjs/internal/Observable';
+import {PinnedItemsResponse} from '../interface/pinnedItemsResponse'
+import {Repository} from '../interface/repository'
+
+
 @Component({
   selector: 'app-projects-section',
   templateUrl: './projects-section.component.html',
   styleUrls: ['./projects-section.component.scss']
 })
+
 export class ProjectsSectionComponent {
-    data: Project[] =[];
+    data: Repository[] =[];
     constructor(private githubProject:GithubProjectsService){
       
     }
     ngOnInit(){
       this.githubProject.getData().subscribe(
-        (data:Project[]) => {console.log(data);
-        this.data = data;
+        (data:PinnedItemsResponse) => {console.log(data);
+        this.data = data.data.user.pinnedItems.nodes;
+        
         }  
       )
     }
