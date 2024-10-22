@@ -1,36 +1,38 @@
 <div id="projects" class="Projects">
-    <h2 class="ProjectHeader">Recent projects</h2>
-    <p class="ProjectParagraf">I started my frontend developer path in 2020. Since then, I’ve built multiple projects.
-        Here’s the list of some of the things I’ve done so far.</p>
-    <div class="ProjectsGap" *ngIf="data && data.length > 0">
-        <div class="ProjectsGitHubCards">
-            <app-github-card 
-            [description]="data[0].description"
-            [project]="data[0].name"
-            [link]="data[0].url"
-            [website]="data[0].homepageUrl"
-            ></app-github-card>
-            <app-github-card 
-            [description]="data[1].description"
-            [project]="data[1].name"
-            [link]="data[1].url"
-            [website]="data[1].homepageUrl"
-            ></app-github-card>
-        </div>
-        <div class="ProjectsGitHubCards">
-            <app-github-card 
-            [description]="data[2].description"
-            [project]="data[2].name"
-            [link]="data[2].url"
-            [website]="data[2].homepageUrl"
-            ></app-github-card>
-            <app-github-card 
-            [description]="data[3].description"
-            [project]="data[3].name"
-            [link]="data[3].url"
-            [website]="data[3].homepageUrl"
-            ></app-github-card>
-        </div>
+  <h2 class="ProjectHeader">Recent projects</h2>
+  <p class="ProjectParagraf">
+    I started my frontend developer path in 2020. Since then, I’ve built
+    multiple projects. Here’s the list of some of the things I’ve done so far.
+  </p>
+  <div class="ProjectsGap" *ngIf="data && data.length > 0">
+    <div class="ProjectsGitHubCards">
+      <app-github-card
+        *ngFor="let project of data | slice : 0 : 2"
+        [description]="project.description"
+        [project]="project.name"
+        [link]="project.url"
+        [website]="project.homepageUrl"
+      ></app-github-card>
     </div>
-
+    <div class="ProjectsGitHubCards">
+        
+        <app-github-card
+        *ngFor="let project of data | slice : 2 : 4"
+        [description]="project.description"
+        [project]="project.name"
+        [link]="project.url"
+        [website]="project.homepageUrl"
+      ></app-github-card>
+    </div>
+    <div class="ProjectsGitHubCards">
+        
+        <app-github-card
+        *ngFor="let project of data | slice : 4 : 6"
+        [description]="project.description"
+        [project]="project.name"
+        [link]="project.url"
+        [website]="project.homepageUrl"
+      ></app-github-card>
+    </div>
+  </div>
 </div>

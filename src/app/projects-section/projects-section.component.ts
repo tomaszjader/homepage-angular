@@ -19,9 +19,9 @@ export class ProjectsSectionComponent {
     }
     ngOnInit(){
       this.githubProject.getData().subscribe(
-        (data:PinnedItemsResponse) => {console.log(data);
-        this.data = data.data.user.pinnedItems.nodes;
-        
+        (data:any) => {console.log(data);
+        //this.data = data.data.user.pinnedItems.nodes;
+        this.data = data.filter((repo: any) => repo.description && repo.homepage);
         }  
       )
     }
