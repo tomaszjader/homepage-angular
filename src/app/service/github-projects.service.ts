@@ -14,7 +14,7 @@ export class GithubProjectsService {
   getData(){
    
     let url ='https://api.github.com/users/tomaszjader/repos'
-    return this.http.get<any>(this.apiUrl,  {
+    return this.http.get<Project[]>(this.apiUrl,  {
       headers: {
         'Content-Type': 'application/json'
       }

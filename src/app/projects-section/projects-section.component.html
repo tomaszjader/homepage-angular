@@ -10,8 +10,8 @@
         *ngFor="let project of data | slice : 0 : 2"
         [description]="project.description"
         [project]="project.name"
-        [link]="project.url"
-        [website]="project.homepageUrl"
+        [link]="project.html_url"
+        [website]="project.homepage"
       ></app-github-card>
     </div>
     <div class="ProjectsGitHubCards">
@@ -20,8 +20,8 @@
         *ngFor="let project of data | slice : 2 : 4"
         [description]="project.description"
         [project]="project.name"
-        [link]="project.url"
-        [website]="project.homepageUrl"
+        [link]="project.html_url"
+        [website]="project.homepage"
       ></app-github-card>
     </div>
     <div class="ProjectsGitHubCards">
@@ -30,8 +30,8 @@
         *ngFor="let project of data | slice : 4 : 6"
         [description]="project.description"
         [project]="project.name"
-        [link]="project.url"
-        [website]="project.homepageUrl"
+        [link]="project.html_url"
+        [website]="project.homepage"
       ></app-github-card>
     </div>
   </div>
